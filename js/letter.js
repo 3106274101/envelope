@@ -6,10 +6,24 @@ $("#open").click(function(){
 	if(!aparted)
 	{
 		var typed = new Typed('.letter', {
-			strings: ["^1000亲爱的&nbsp;&nbsp;李志鹏", 
-				"^200见字如面<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文字文字文字^300文字文字文字^200文字文字文字^600文字文字文字^600文字文字文字^200文字文字文字^600文字文字文字^200文字文字文字！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文字文字文字^300文字文字文字^600文字文字文字^300文字文字文字^600文字文字文字^300文字文字文字！<br><br><p style='float:right; display:block; width:80px;'>^1000李^200志鹏</p>"],
+			strings: ["^1000致&nbsp;&nbsp;李志鹏", 
+				// "^200见字如晤，展信舒颜<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文字文字文字^300文字文字文字，^200文字文字文字^600文字文字文字,^600文字文字文字、^200文字文字文字、^600文字文字文字、^200文字文字文字！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文字文字文字^300文字文字文字^600文字文字文字^300文字文字文字，^600文字文字文字^300文字文字文字！<br><br><p style='float:right; display:block; width:80px;'>^1000李^200志鹏</p><br><br>按钮1<br><br>按钮2"],
+				`^200见字如晤，展信舒颜
+				<br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				文字文字文字^300文字文字文字！
+				<br><br>
+				<p id='btn1' style='cursor: pointer;'>樱花相册</p>`
+			],
 			typeSpeed: 100,
-			backSpeed: 50
+			backSpeed: 50,
+			// 打字机结束后绑定事件
+			onComplete:function(){
+				// 跳转樱花相册 
+				document.getElementById('btn1').addEventListener('click',function(event){
+					window.location.replace('https://3106274101.github.io/yinghua/');
+				})
+			}
 		});
 		
 		$('#open').find("span").eq(0).css('background-position', "0 -150px");
