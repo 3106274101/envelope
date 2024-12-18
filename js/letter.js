@@ -21,7 +21,7 @@ $("#open").click(function(){
 			onComplete:function(){
 				// 跳转樱花相册 
 				document.getElementById('btn1').addEventListener('click',function(event){
-					window.location.replace('https://3106274101.github.io/yinghua/');
+					window.location.replace('yinghua-8pvtmxo0y-lzps-projects-687ab2da.vercel.app');
 				})
 			}
 		});
