@@ -13,7 +13,10 @@ $("#open").click(function(){
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				文字文字文字^300文字文字文字！
 				<br><br>
-				<p id='btn1' style='cursor: pointer;'>樱花相册</p>`
+				<p id='btn1' style='cursor: pointer;'>樱花相册</p>
+    				<br><br>
+				<p id='btn2' style='cursor: pointer;'>跳转百度测试</p>
+    				`
 			],
 			typeSpeed: 100,
 			backSpeed: 50,
@@ -23,6 +26,12 @@ $("#open").click(function(){
 				document.getElementById('btn1').addEventListener('click',function(event){
 					window.location.replace('yinghua-8pvtmxo0y-lzps-projects-687ab2da.vercel.app');
 				})
+
+
+	                        document.getElementById('btn2').addEventListener('click',function(event){
+					window.location.replace('www.baidu.com');
+				})
+
 			}
 		});
 		
